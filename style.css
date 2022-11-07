@@ -115,10 +115,12 @@
 }
 
 #light-link {
+    font-family: var(--secondary-font), sans-serif;
     color: #EDDDD4;
 }
 
 #dark-link {
+    font-family: var(--secondary-font), sans-serif;
     color: #197278;
 }
 
