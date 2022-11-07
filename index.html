@@ -40,13 +40,13 @@
             <p id="title-descrip">
                 A group exercise in designing an interactive interface for an emerging startup from the ground up.
             </p>
-            <img src="imgs/home_page.png" alt="A screenshot of the Slingshot mobile home page that we designed." id="ss" class="img-fluid">
+            <img src="imgs/ss.png" alt="A screenshot of the Slingshot mobile home page that we designed." id="ss" class="img-fluid">
         </div>
 
         <div class="dark-sect" id="Startup">
             <h1 id="light-header">The Startup</h1>
             <p id="light-body-tx">
-                For this project, we chose to design a mobile interface for <a target="_blank" rel="noopener noreferrer" href="https://www.ycombinator.com/companies/slingshot" id="light-accent">Slingshot</a>, a YC startup that automatically monitors and reduces people's medical bills. <br><br> Their product works as follows: when a patient gets a medical bill they upload it to Slingshot, and Slingshot analyzes the bills to find the errors, the up-codes, the items insurance should have covered but didn’t, and the items that can be negotiated to a lower cost. Slingshot handles all the time-consuming interactions with hospitals and insurance companies to fix errors and negotiate costs. <br><br> Slingshot has both <i>Business-to-Business</i> and <i>Business-to-Consumer</i> functionality — users can use Slingshot's software themselves, but Slingshot also offers their software to employers as a free benefit, charging a percentage of the savings they get.
+                For this project, we chose to design a mobile interface for <a target="_blank" rel="noopener noreferrer" href="https://www.ycombinator.com/companies/slingshot" id="light-link">Slingshot</a>, a YC startup that automatically monitors and reduces people's medical bills. <br><br> Their product works as follows: when a patient gets a medical bill they upload it to Slingshot, and Slingshot analyzes the bills to find the errors, the up-codes, the items insurance should have covered but didn’t, and the items that can be negotiated to a lower cost. Slingshot handles all the time-consuming interactions with hospitals and insurance companies to fix errors and negotiate costs. <br><br> Slingshot has both <i>Business-to-Business</i> and <i>Business-to-Consumer</i> functionality — users can use Slingshot's software themselves, but Slingshot also offers their software to employers as a free benefit, charging a percentage of the savings they get.
             </p>
         </div>
 
@@ -60,27 +60,477 @@
                         Because Slingshot is focused around consumer health services, there's a wide range of potential users who would be impacted by our interface:
                         <ul>
                             <li id="dark-body-tx">
-                                bruh
+                                ‘Regular’ people insured through their employer and those that can afford own insurance if not through an employer
                             </li>
+                                <ul>
+                                    <li id="dark-body-tx">
+                                        People who get regular check-ups when ill could be positively impacted bc ppl often don’t know to check through their medical bills for extraneous costs, which can drive up the price of check-ups over time.
+                                    </li>
+                                    <li id="dark-body-tx">
+                                        People who can generally afford care, but may be tipped over by a particularly expensive bill.
+                                    </li>
+                                </ul>
                             <li id="dark-body-tx">
-                                bruh
+                                Under-served, uninsured populations
                             </li>
-                            <li id="dark-body-tx">
-                                bruh
-                            </li>
+                                <ul>
+                                    <li id="dark-body-tx">
+                                        Populations like those experiencing poverty, houselessness, disability, chronic-illness, mental-illness, etc. would be positively impacted because they have the least resources to deal with exploitative medical billings, but often need expensive care due to their situation.
+                                    </li>
+                                    <li id="dark-body-tx">
+                                        People who only go to healthcare as a last resort/in emergency situations could be positively impacted bc ER bills can be really expensive and often more damaging than the emergency incident itself (especially if people aren’t asking for itemized bills).
+                                    </li>
+                                </ul>
                         </ul>
                     </p>
                 <h3 id="dark-subheader"><u>Sketches</u></h3>
+                    <p id="dark-body-tx">
+                        We began our iterative design process by each creating rough sketches for 3 different screens over a span of 5 minutes. Though some of us had some overlapping screens, we felt that our designs and concepts were substantially different enough that we chose to include the overlapping screens. You can find each of our sketches below:
+                        <ul>
+                            <li id="dark-body-tx">
+                                <a href="imgs/sketch_1.png" target="_blank" id="dark-link">
+                                    Team Member 1
+                                </a>
+                            </li>
+                            <li id="dark-body-tx">
+                                <a href="imgs/sketch_2.png" target="_blank" id="dark-link">
+                                    Team Member 2
+                                </a>
+                            </li>
+                            <li id="dark-body-tx">
+                                <a href="imgs/sketch_3.png" target="_blank" id="dark-link">
+                                    Team Member 3
+                                </a>
+                            </li>
+                            <li id="dark-body-tx">
+                                <a href="imgs/sketch_4.png" target="_blank" id="dark-link">
+                                    Team Member 4
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
                 <h3 id="dark-subheader"><u>Wireframes</u></h3>
+                    <p id="dark-body-tx">
+                        After we finished our rough sketches, we combined our core ideas/screens that we felt were most relevant to Slingshot's mission into one set of wireframes with 4 different screens: a Home page, a Bills/Billing page, a Billing Trends pages, and a Resources page. <b>You can find our lo-fi prototype <a href="imgs/lofi.png" target="_blank" id="dark-link">here</a>.</b>
+                    </p>
             </div>
         </div>
 
         <div class="dark-sect" id="Mockups">
             <h1 id="light-header">Mockups</h1>
+            <p id="light-body-tx">
+                After we created our wireframes, we implemented them into a more polished, hi-fi prototype using Figma. We made some changes from our original, lo-fi design (such as including a "Click to Upload Bill" button on the Home page), and included significantly more detail for realistic interactions.
+                <br><br>
+                We presented this prototype to a critique session with other students. These are the main critiques we received:
+                <ol>
+                    <li id="light-list-tx">
+                        Lack of "go back" functionality on nested pages makes navigation difficult.
+                    </li>
+                    <li id="light-list-tx">
+                        Transparency de-emphasizes important buttons.
+                    </li>
+                    <li id="light-list-tx">
+                        There's no way to "escape" once you've clicked a drop-down button.
+                    </li>
+                    <li id="light-list-tx">
+                        The animation going to the <b>Home</b> page from another page feels off, as it comes in from the right, but you might expect it to come in from the left.
+                    </li>
+                    <li id="light-list-tx">
+                        It's difficult to see all header subpage names on the <b>Trends</b> and <b>Resources</b> pages.
+                    </li>
+                </ol>
+                <br>
+                <p id="light-body-tx">
+                    Once we received our critiques, we further iterated on our design, implementing fixes based on the suggestions/critiques offered by our fellow students. Here's how we addressed each main critique in our final, hi-fi prototype:
+                </p>
+                <ol>
+                    <li id="light-list-tx">
+                        We included "back" functionality on our <b>Bills</b> page, as that had the most nested interactions, and we wanted users to primarily interact with that page during the later stages of user testing.
+                    </li>
+                    <li id="light-list-tx">
+                        We increased the opacity of important buttons, like "Click to Upload Bills," to 100%.
+                    </li>
+                    <li id="light-list-tx">
+                        We added an animation to our drop-down buttons so that when users are not hovering over them, the drop-down will return to its closed state.
+                    </li>
+                    <li id="light-list-tx">
+                        We changed the animation to return to the <b>Home</b> page from any other page such that the Home page comes in from the left.
+                    </li>
+                    <li id="light-list-tx">
+                        We reduced the size of the subpage names on both the <b>Trends</b> and <b>Resources</b> pages so users can see all possible subpages without having to scroll horizontally on the header.
+                    </li>
+                </ol>
+                <br>
+                <p id="light-body-tx">
+                    <b>
+                    You can find and interact with our final prototype <a href="https://www.figma.com/proto/sPyO1Rdaw9DfFYsvFSV1SB/Slingshot-Iterative-Design?node-id=17%3A16&scaling=scale-down&page-id=16%3A2&starting-point-node-id=17%3A16&show-proto-sidebar=1" target="_blank" id="light-link">here</a>.
+                    </b>
+                </p>
+            </p>
         </div>
 
         <div class="light-sect" id="Testing">
             <h1 id="dark-header">User Testing</h1>
+            <p id="dark-center-tx">
+                After finalizing our hi-fi prototype, we sent the prototype to a <a href="https://www.usertesting.com" target="_blank" id="dark-link">remote user testing service</a> so we could gather feedback and data from non-student users.
+            </p>
+            <div class="subcontent">
+                <h3 id="dark-subheader"><u>Task</u></h3>
+                    <p id="dark-body-tx">
+                        For users to test our prototype, we needed to create a specific task for them to accomplish with our prototype. We decided on the following:
+                        <p id="dark-body-quote">
+                            "Find the cost breakdown of how much you saved in “Physician Services” on your most recently completed bill from RI Hospital."
+                        </p>
+                        <br>
+                        <p id="dark-body-tx">
+                            To complete this task, users would have to go through the following steps:
+                        </p>
+                        <ol>
+                            <li id="dark-body-tx">
+                                Navigate to the <b>Bills</b> page. 
+                            </li>
+                            <li id="dark-body-tx">
+                                Click on the “Sort and Filter” dropdown button to sort the “Completed” bills by “Most Recent.” 
+                            </li>
+                            <li id="dark-body-tx">
+                                Find the most recently completed bill from RI Hospital. 
+                            </li>
+                            <li id="dark-body-tx">
+                                Click on “Emergency Visit, Level 4” under “Physician Services” to see the cost breakdown of what you saved.
+                            </li>
+                        </ol>
+                        <br>
+                        <p id="dark-body-tx">
+                            When we submitted our prototype to the user testing site, we included the following directions:
+                        </p>
+                        <p id="dark-body-quote">
+                            "Imagine you are a company employee stressed about medical bills from your emergency room visit in September. You want to check if that medical bill has reduced in cost through the Slingshot app on your phone. 
+                            Your task is to find the cost breakdown of how much you saved in “Physician Services” on your most recently completed bill from RI Hospital. 
+                            You are encouraged to think aloud as you perform the task so we can better understand your thought process while navigating the site! Please note that this is an interactive mock-up and not an actual mobile application. Some screens (e.g. the Spendings tab in the Trends page) were not actually created or are unreachable through the mock-up."
+                        </p>
+                        <br>
+                        <p id="dark-body-tx">
+                            We also included the following post-test questionnaire:
+                        </p>
+                        <ol>
+                            <li id="dark-body-tx">
+                                How would you describe your overall experience with the prototype?
+                            </li>
+                            <li id="dark-body-tx">
+                                What, if anything, surprised you about the experience?
+                            </li>
+                            <li id="dark-body-tx">
+                                What, if anything, made you frustrated about the app?
+                            </li>
+                            <li id="dark-body-tx">
+                                What are your thoughts on the design, color, and/or layout?
+                            </li>
+                        </ol>
+                    </p>
+                <h3 id="dark-subheader"><u>Results</u></h3>
+                    <p id="dark-body-tx">
+                        3 users tested our hi-fi prototype. Here are the results (as well as their answers to our post-test questionnaire):
+                    </p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 id="dark-body-tx" class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    User 1
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" id="drop-bod">
+                                    <video src="imgs/user_a.mp4" controls></video>
+                                    <br>
+                                    <p id="dark-body-tx">
+                                        Post-Test Questionnaire:
+                                    </p>
+                                    <ol>
+                                        <li id="dark-body-tx">
+                                            How would you describe your overall experience with the prototype?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "It was easy to use and everything was where I expected to be and was el labeled. I had no questions along the way."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What, if anything, surprised you about the experience?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "The clarity of the breakdown was very easy to understand, especially considering the content (medical bills) being overwhelming and confusing."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What, if anything, made you frustrated about the app?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "I really didn't find anything frustrating. It was all quite simple."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What are your thoughts on the design, color, and/or layout?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "Overal it feels somewhat dated, low tech, and lacking polish. The colors are nice, very calming. The layout is simple and not confusing."
+                                            </li>
+                                        </ul>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 id="dark-body-tx" class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    User 2
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" id="drop-bod">
+                                    <video src="imgs/user_b.mp4" controls></video>
+                                    <br>
+                                    <p id="dark-body-tx">
+                                        Post-Test Questionnaire:
+                                    </p>
+                                    <ol>
+                                        <li id="dark-body-tx">
+                                            How would you describe your overall experience with the prototype?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "Easy to use, clear direction to get where I needed to go- clear flow."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What, if anything, surprised you about the experience?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "Intrigued by the concept."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What, if anything, made you frustrated about the app?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "Making it a little more clear what the cost changes meant."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What are your thoughts on the design, color, and/or layout?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "Colors made me think of a maternity ward in a hospital. Baby colors."
+                                            </li>
+                                        </ul>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 id="dark-body-tx" class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    User 3
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" id="drop-bod">
+                                    <video src="imgs/user_c.mp4" controls></video>
+                                    <br>
+                                    <p id="dark-body-tx">
+                                        Post-Test Questionnaire:
+                                    </p>
+                                    <ol>
+                                        <li id="dark-body-tx">
+                                            How would you describe your overall experience with the prototype?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "It was very easy to understand and utilize."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What, if anything, surprised you about the experience?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "Nothing it was very clear cut."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What, if anything, made you frustrated about the app?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "My own confusion made me frustrated."
+                                            </li>
+                                        </ul>
+                                        <li id="dark-body-tx">
+                                            What are your thoughts on the design, color, and/or layout?
+                                        </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                "It looks like a normal doctor app with normal colors."
+                                            </li>
+                                        </ul>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                <h3 id="dark-subheader"><u>Analysis</u></h3>
+                    <p id="dark-body-tx">
+                        Finally, we analyzed each user testing video by breaking down the subtasks, the errors users made, their general performance, and potential changes we'd made based on their results.
+                    </p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 id="dark-body-tx" class="accordion-header" id="flush-heading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                    User 1
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+                                <br>
+                                <ul id="accord-bullets">
+                                    <li id="dark-body-tx">
+                                        Subtasks the user had to accomplish
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                The subtasks consisted of navigating from the homepage to the “Bills” page, sorting the “Complete” bills by “Most Recent”,  and clicking on the most recent bill from RI Hospital to view how much was saved under the “Physician Services” portion of the bill.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        Errors the user made
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                The user tried to click multiple times through the Sort and Filter → Sort By → Most Recent dropdown, and that caused difficulties in the prototype. This made the user restart from the beginning of the flow at the home page in order to continue.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        User's general performance
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                Generally they did well on the tasks. They quickly (almost immediately) found the action element and acted upon that element in a confident and intuitive way. They voiced their ease of use, and excitement in the potential of the app, as they have a background in medicine.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        Potential interface changes based on the user's experience
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                We can change the ‘Sort and Filter’ button to two separate buttons: one for ‘Filter’ and one for ‘Sort’.
+                                            </li>
+                                        </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 id="dark-body-tx" class="accordion-header" id="flush-heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                    User 2
+                                </button>
+                            </h2>
+                            <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+                                <br>
+                                <ul id="accord-bullets">
+                                    <li id="dark-body-tx">
+                                        Subtasks the user had to accomplish
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                The subtasks consisted of navigating from the homepage to the “Bills” page, sorting the “Complete” bills by “Most Recent”,  and clicking on the most recent bill from RI Hospital to view how much was saved under the “Physician Services” portion of the bill.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        Errors the user made
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                The only error that the user made was misclicking the wrong section of the dropdown, but they fixed this error quickly and they were able to navigate the rest of the dropdown options menus that popped up.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        User's general performance
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                Generally, they did very well on the tasks and navigated everything with quick ease. From their thought process, the user had a very thorough understanding of the task, the layout, and the navigation of our prototype. Specifically, they said that navigating and finding information was “very straightforward” and what they were looking for was easy to find and in “one of the first places [they] looked.”  The task that took the longest was opening the dropdown menu to Sort and Filter, but that was because they clicked on the wrong section.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        Potential interface changes based on the user's experience
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                Based on the results and feedback, an interface change we would make is to specify the numerical values on the cards that have the original price to the decreased price. The user said that it was not clear if the second number was what the cost was reduced by or if it was what the cost was reduced to. This could be made more clear with a net info button or just more text that explains the meaning of the numbers.
+                                            </li>
+                                        </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 id="dark-body-tx" class="accordion-header" id="flush-heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                    User 3
+                                </button>
+                            </h2>
+                            <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                                <br>
+                                <ul id="accord-bullets">
+                                    <li id="dark-body-tx">
+                                        Subtasks the user had to accomplish
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                The subtasks consisted of navigating from the homepage to the “Bills” page, sorting the “Complete” bills by “Most Recent”,  and clicking on the most recent bill from RI Hospital to view how much was saved under the “Physician Services” portion of the bill.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        Errors the user made
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                One error that the user made was that they accidentally clicked on the “Trend” icon button on the footer instead of the “Bills” icon from the homepage in subtask 1, so they got confused by the following action directed in subtask 2, which was interacting with a feature only presented on the “Bills” page. The user ended up having to navigate back to the homepage from “Trends” through the footer and was able to successfully get to the “Bills” page the second time.
+                                            </li>
+                                            <li id="dark-body-tx">
+                                                Once they got to the “Bills” page, they made the mistake of clicking the “Pending” “Sort and filter” dropdown button as opposed to the directed “Complete” “Sort and filter” dropdown button in subtask 2, which could have just been a matter of misreading or forgetting the task directions.
+                                            </li>
+                                            <li id="dark-body-tx">
+                                                Lastly, the user had difficulties getting from subtask 3 to 4 and navigated between “Bills” and the homepage until they were able to successfully complete subtask 4 by completing a step that was not specified in subtask 3, which only directed the user to locate the most recent bill from RI Hospital. By clicking on that bill, the user was able to get to the nested page that eventually allowed them to complete subtask 4. This error was not necessarily on the user’s part, but ours.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        User's general performance
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                Overall, they did very well on both understanding and completed the assigned subtasks, although subtask 1 and 4 took the longest for them to complete due to the errors discussed above. One thing that stood out to me was our lack of clarification on subtask 3, which did not specify for the user to actually click on the bill that we wanted them to interact with. That led to quite a bit of confusion for the user, which could have been avoided by specifying that we wanted the user to both locate and interact with the bill button. For all of the assigned tasks, however, the user stated that they were able to successfully complete each one, rating 2/4 tasks with a 4 and the rest with a 5.
+                                            </li>
+                                        </ul>
+                                    <li id="dark-body-tx">
+                                        Potential interface changes based on the user's experience
+                                    </li>
+                                        <ul>
+                                            <li id="dark-body-tx">
+                                                Based off of the results from this UserTesting video, some potential interface changes I would make would include finding a way to organize or space the footer icons out in a way that would help reduce the chances of a user clicking on an icon they did not intend to interact with, as well as making the header titles more noticeable and attention-grabbing so users can easily deduce where they are in the application.
+                                            </li>
+                                        </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html>
