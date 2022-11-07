@@ -1,1 +1,2 @@
 # iterative-design
+document of the iterative design process creating a mobile interface for [Slingshot](https://www.ycombinator.com/companies/slingshot). done for CS1300 @ Brown. you can find the final site [here](https://banalbat666.github.io/iterative/).
