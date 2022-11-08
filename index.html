@@ -38,16 +38,23 @@
         <div class="home">
             <h1 id="title">Iterative Design</h1>
             <p id="title-descrip">
-                A group exercise in designing an interactive interface for an emerging startup from the ground up.
+                A group exercise in designing an interactive interface for an emerging startup.
             </p>
             <img src="imgs/ss.png" alt="A screenshot of the Slingshot mobile home page that we designed." id="ss" class="img-fluid">
         </div>
 
         <div class="dark-sect" id="Startup">
             <h1 id="light-header">The Startup</h1>
-            <p id="light-body-tx">
-                For this project, we chose to design a mobile interface for <a target="_blank" rel="noopener noreferrer" href="https://www.ycombinator.com/companies/slingshot" id="light-link">Slingshot</a>, a YC startup that automatically monitors and reduces people's medical bills. <br><br> Their product works as follows: when a patient gets a medical bill they upload it to Slingshot, and Slingshot analyzes the bills to find the errors, the up-codes, the items insurance should have covered but didn’t, and the items that can be negotiated to a lower cost. Slingshot handles all the time-consuming interactions with hospitals and insurance companies to fix errors and negotiate costs. <br><br> Slingshot has both <i>Business-to-Business</i> and <i>Business-to-Consumer</i> functionality — users can use Slingshot's software themselves, but Slingshot also offers their software to employers as a free benefit, charging a percentage of the savings they get.
-            </p>
+            <div class="subcontent">
+                <h3 id="light-subheader"><u>Our Project</u></h3>
+                    <p id="light-body-tx">
+                        For this project, we chose to design a mobile interface for <a target="_blank" rel="noopener noreferrer" href="https://www.ycombinator.com/companies/slingshot" id="light-link">Slingshot</a>, a YC startup that utilizes software that automatically monitors and reduces people's medical bills.
+                    </p>
+                <h3 id="light-subheader"><u>The Product</u></h3>
+                    <p id="light-body-tx">
+                        With Slingshot, users can sign up and connect their insurance. The software will then begin to automatically monitor all claims processed by the user’s insurance and will notify the user when they are being overcharged for errors, up-codes, uncovered costs, and negotiable items. From these notifications, users have the option of enabling Slingshot to correct and lower their medical bills. Users can also upload medical bills directly and opt in for automatic insurance claim monitoring.
+                    </p>
+            </div>
         </div>
 
         <div class="light-sect" id="Sketches-Lofi">
@@ -55,63 +62,91 @@
             <div class="subcontent">
                 <h3 id="dark-subheader"><u>Pre-Design Thinking</u></h3>
                     <p id="dark-body-tx">
-                        We decided to focus on the Business-to-Consumer aspect of Slingshot, where users interact with the product directly and receive savings on their medical bills. As a result, we decided on creating a <b>mobile interface</b> for Slingshot, since we believe that to be the most convenient interface for everyday users.
+                        We decided to focus on the direct user interactions of Slingshot, where users easily access information on their medical bill savings. As a result, we decided to create a <b>mobile interface</b> for Slingshot, since mobile interfaces are accessible to any smartphone user, for easy, everyday use, and they allow for real-time state monitoring through push notifications.
                         <br><br>
                         Because Slingshot is focused around consumer health services, there's a wide range of potential users who would be impacted by our interface:
                         <ul>
                             <li id="dark-body-tx">
-                                ‘Regular’ people insured through their employer and those that can afford own insurance if not through an employer
+                                Financially stable people with insurance (either through employment or personal payment)
                             </li>
                                 <ul>
-                                    <li id="dark-body-tx">
-                                        People who get regular check-ups when ill could be positively impacted bc ppl often don’t know to check through their medical bills for extraneous costs, which can drive up the price of check-ups over time.
+                                    <li id="dark-body-subtx">
+                                        People who are financially stable often can afford receiving regular medical check-ups when ill, which can be hard to keep up with when the frequency of bills received increases. This demographic could be positively impacted by our prototype in that having a mobile interface for the Slingshot software would make checking for extraneous costs on a large batch of bills received much easier to catch and manage accordingly.
                                     </li>
-                                    <li id="dark-body-tx">
-                                        People who can generally afford care, but may be tipped over by a particularly expensive bill.
+                                    <li id="dark-body-subtx">
+                                        People who can generally afford care but may be tipped over by a particularly financially strenuous bill would also be positively affected, since having both the Slingshot software and the availability of that software on an easily accessible device like mobile would help to mitigate the adverse effects certain medical bills may have on a user.
                                     </li>
                                 </ul>
                             <li id="dark-body-tx">
                                 Under-served, uninsured populations
                             </li>
                                 <ul>
-                                    <li id="dark-body-tx">
-                                        Populations like those experiencing poverty, houselessness, disability, chronic-illness, mental-illness, etc. would be positively impacted because they have the least resources to deal with exploitative medical billings, but often need expensive care due to their situation.
+                                    <li id="dark-body-subtx">
+                                        People like those experiencing poverty, houselessness, disability, chronic illness(es), mental illness(es), etc. would benefit from such a service and interface, as our prototype would provide these users the option of both the technical details of their cost breakdowns and savings, as well as additional information and resources for them to access, all in one application. For those who wouldn’t have a mobile device to access our prototype from would at least be able to access the information Slingshot would provide through any device supporting the receiving of and access to emails.
                                     </li>
-                                    <li id="dark-body-tx">
-                                        People who only go to healthcare as a last resort/in emergency situations could be positively impacted bc ER bills can be really expensive and often more damaging than the emergency incident itself (especially if people aren’t asking for itemized bills).
+                                    <li id="dark-body-subtx">
+                                        People who turn to healthcare services as a last resort or in emergency situations would also benefit from a mobile interface for Slingshot, considering ER bills can be extremely costly and oftentimes more damaging than the medical incident itself. With both the ease of access through a mobile application and the Slingshot software available through that interface, these users would be able to easily view detailed descriptions of what they were charged for like they would from an itemized bill, while simultaneously being able to account for and reduce those charges.
                                     </li>
                                 </ul>
                         </ul>
                     </p>
                 <h3 id="dark-subheader"><u>Sketches</u></h3>
                     <p id="dark-body-tx">
-                        We began our iterative design process by each creating rough sketches for 3 different screens over a span of 5 minutes. Though some of us had some overlapping screens, we felt that our designs and concepts were substantially different enough that we chose to include the overlapping screens. You can find each of our sketches below:
-                        <ul>
-                            <li id="dark-body-tx">
-                                <a href="imgs/sketch_1.png" target="_blank" id="dark-link">
-                                    Team Member 1
-                                </a>
-                            </li>
-                            <li id="dark-body-tx">
-                                <a href="imgs/sketch_2.png" target="_blank" id="dark-link">
-                                    Team Member 2
-                                </a>
-                            </li>
-                            <li id="dark-body-tx">
-                                <a href="imgs/sketch_3.png" target="_blank" id="dark-link">
-                                    Team Member 3
-                                </a>
-                            </li>
-                            <li id="dark-body-tx">
-                                <a href="imgs/sketch_4.png" target="_blank" id="dark-link">
-                                    Team Member 4
-                                </a>
-                            </li>
-                        </ul>
+                        We began our iterative design process by having each member create rough sketches for 3 different screens. We didn’t specify what those screens would entail, as we wanted to get an idea of what type of screens each member thought would be the most essential for the prototype. Though some of us had screens that overlapped, we felt that our design concepts overall were substantially different enough to include them in our final sketches. You can find each of our sketches below:
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 id="dark-body-tx" class="accordion-header" id="flush-headingMem1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMem1" aria-expanded="false" aria-controls="flush-collapseMem1">
+                                        Team Member 1
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseMem1" class="accordion-collapse collapse" aria-labelledby="flush-headingMem1" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <img id="accord-img" src="imgs/sketch_1.png" alt="Sketch of an itemized bill screen, detailed bill screen, and an 'all bills' screen.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 id="dark-body-tx" class="accordion-header" id="flush-headingMem2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMem2" aria-expanded="false" aria-controls="flush-collapseMem2">
+                                        Team Member 2
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseMem2" class="accordion-collapse collapse" aria-labelledby="flush-headingMem2" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <img id="accord-img" src="imgs/sketch_2.png" alt="Sketch of a bill snapshot screen, a bill breakdown screen, and a bill trends screen.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 id="dark-body-tx" class="accordion-header" id="flush-headingMem3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMem3" aria-expanded="false" aria-controls="flush-collapseMem3">
+                                        Team Member 3
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseMem3" class="accordion-collapse collapse" aria-labelledby="flush-headingMem3" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <img id="accord-img" src="imgs/sketch_3.png" alt="Sketch of a bill snapshot screen with trendlines, a home screen, and an overall bills screen.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 id="dark-body-tx" class="accordion-header" id="flush-headingMem4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMem4" aria-expanded="false" aria-controls="flush-collapseMem4">
+                                        Team Member 4
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseMem4" class="accordion-collapse collapse" aria-labelledby="flush-headingMem4" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <img id="accord-img" src="imgs/sketch_4.png" alt="Sketch of a bills overviews and updates screen, a bill breakdown/snapshot screen, and a resources screen.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </p>
                 <h3 id="dark-subheader"><u>Wireframes</u></h3>
                     <p id="dark-body-tx">
-                        After we finished our rough sketches, we combined our core ideas/screens that we felt were most relevant to Slingshot's mission into one set of wireframes with 4 different screens: a Home page, a Bills/Billing page, a Billing Trends pages, and a Resources page. <b>You can find our lo-fi prototype <a href="imgs/lofi.png" target="_blank" id="dark-link">here</a>.</b>
+                        After we finished our rough sketches, we incorporated our sketches (overlapping and separate) with additional features we felt were also relevant to Slingshot’s mission into one set of wireframes with 4 different screens: a “Home” page, a “Bills” page, a “Trends” page, and a “Resources” page. <b>You can find our lo-fi prototype <a href="imgs/lofi.png" target="_blank" id="dark-link">here</a>.</b>
                     </p>
             </div>
         </div>
@@ -119,45 +154,39 @@
         <div class="dark-sect" id="Mockups">
             <h1 id="light-header">Mockups</h1>
             <p id="light-body-tx">
-                After we created our wireframes, we implemented them into a more polished, hi-fi prototype using Figma. We made some changes from our original, lo-fi design (such as including a "Click to Upload Bill" button on the Home page), and included significantly more detail for realistic interactions.
+                After creating our wireframes, we implemented them into a more polished, Hi-Fi prototype through Figma. In this prototype, we also added a few features not included in our original Lo-Fi design (such as the 'Click to Upload Bill' button on the "Home" page) and included significantly more detail for realistic interactions users would be engaging with.
                 <br><br>
-                We presented this prototype to a critique session with other students. These are the main critiques we received:
+                We presented this prototype to a critique session with other students in the CSCI1300 course. The main critiques we received regarded:
                 <ol>
                     <li id="light-list-tx">
-                        Lack of "go back" functionality on nested pages makes navigation difficult.
+                        <b id="light-bold-accent">Lack of User Control and Freedom</b>: Missing “back” functionality on nested pages and “escape” options from drop-down menus made it inconvenient for users to navigate through pages
                     </li>
                     <li id="light-list-tx">
-                        Transparency de-emphasizes important buttons.
+                        <b id="light-bold-accent">Ineffective Aspects of our Design System</b>: The use of transparency for both cards and buttons takes away from the “Call-to-Action” nature of the buttons.
                     </li>
                     <li id="light-list-tx">
-                        There's no way to "escape" once you've clicked a drop-down button.
+                        <b id="light-bold-accent">Disrupting User Mental Models</b>: Returning to the “Home” page violated users’ expectations of having an animation that was not distinguishable from the animations of leaving the “Home” page (both actions caused pages to come in from the right).
                     </li>
                     <li id="light-list-tx">
-                        The animation going to the <b>Home</b> page from another page feels off, as it comes in from the right, but you might expect it to come in from the left.
-                    </li>
-                    <li id="light-list-tx">
-                        It's difficult to see all header subpage names on the <b>Trends</b> and <b>Resources</b> pages.
+                        <b id="light-bold-accent">Overlooking Visibility</b>: The subpage tabs displayed on the “Trends” and “Resources” headers were difficult to read, as they required that users scroll horizontally to be able to view all of the offered subpages.
                     </li>
                 </ol>
                 <br>
                 <p id="light-body-tx">
-                    Once we received our critiques, we further iterated on our design, implementing fixes based on the suggestions/critiques offered by our fellow students. Here's how we addressed each main critique in our final, hi-fi prototype:
+                    Once we received our critiques, we further iterated on our design by implementing fixes based on the suggestions offered by our fellow CSCI1300 students. We addressed each main critique in our final, Hi-Fi prototype:
                 </p>
                 <ol>
                     <li id="light-list-tx">
-                        We included "back" functionality on our <b>Bills</b> page, as that had the most nested interactions, and we wanted users to primarily interact with that page during the later stages of user testing.
+                        <b id="light-bold-accent">Improving User Control and Freedom</b>: We implemented “back” functionality on nested pages as seen in our “Bills” page, which consisted of the most nested interactions of our prototype, using “back” buttons. We also implemented “back” functionality for the drop-down menus in which they would return to their closed state when users would click on any part of the screen outside of the menus.
                     </li>
                     <li id="light-list-tx">
-                        We increased the opacity of important buttons, like "Click to Upload Bills," to 100%.
+                        <b id="light-bold-accent">Improve Upon our Design System</b>: We assigned opaque colors to buttons like “Click to Upload Bills” on the “Home” page and drop-down menus on the “Bills” and “Trends” page, while only using transparent colors for cards.
                     </li>
                     <li id="light-list-tx">
-                        We added an animation to our drop-down buttons so that when users are not hovering over them, the drop-down will return to its closed state.
+                        <b id="light-bold-accent">Aligning with User Mental Models</b>: We added an animation for returning to the “Home” page (page comes in from the left) that was the opposite of the animations used for leaving the “Home” page to align with the idea that returning to a page is the opposite of leaving a page.
                     </li>
                     <li id="light-list-tx">
-                        We changed the animation to return to the <b>Home</b> page from any other page such that the Home page comes in from the left.
-                    </li>
-                    <li id="light-list-tx">
-                        We reduced the size of the subpage names on both the <b>Trends</b> and <b>Resources</b> pages so users can see all possible subpages without having to scroll horizontally on the header.
+                        <b id="light-bold-accent">Accounting for Visibility</b>: We removed the scrolling feature and reduced the size of the subpage tab names on both the “Trends” and “Resources pages so users would be able to view all of the subpages offered in one place.
                     </li>
                 </ol>
                 <br>
@@ -172,22 +201,22 @@
         <div class="light-sect" id="Testing">
             <h1 id="dark-header">User Testing</h1>
             <p id="dark-center-tx">
-                After finalizing our hi-fi prototype, we sent the prototype to a <a href="https://www.usertesting.com" target="_blank" id="dark-link">remote user testing service</a> so we could gather feedback and data from non-student users.
+                After finalizing our hi-fi prototype, we sent the prototype to a <a href="https://www.usertesting.com" target="_blank" id="dark-link">remote user testing service</a> to gather feedback and data on our design from random users.
             </p>
             <div class="subcontent">
                 <h3 id="dark-subheader"><u>Task</u></h3>
                     <p id="dark-body-tx">
-                        For users to test our prototype, we needed to create a specific task for them to accomplish with our prototype. We decided on the following:
+                        For users to test our prototype, we needed to create a specific task for them to accomplish. We decided on the following:
                         <p id="dark-body-quote">
                             "Find the cost breakdown of how much you saved in “Physician Services” on your most recently completed bill from RI Hospital."
                         </p>
                         <br>
                         <p id="dark-body-tx">
-                            To complete this task, users would have to go through the following steps:
+                            To complete this task, we broke down a user’s required actions into 4 subtasks:
                         </p>
                         <ol>
                             <li id="dark-body-tx">
-                                Navigate to the <b>Bills</b> page. 
+                                Navigate to the "Bills" page. 
                             </li>
                             <li id="dark-body-tx">
                                 Click on the “Sort and Filter” dropdown button to sort the “Completed” bills by “Most Recent.” 
@@ -201,7 +230,7 @@
                         </ol>
                         <br>
                         <p id="dark-body-tx">
-                            When we submitted our prototype to the user testing site, we included the following directions:
+                            With our submission of the prototype to the UserTesting site, we included the following directions for the user to keep in mind:
                         </p>
                         <p id="dark-body-quote">
                             "Imagine you are a company employee stressed about medical bills from your emergency room visit in September. You want to check if that medical bill has reduced in cost through the Slingshot app on your phone. 
@@ -229,7 +258,7 @@
                     </p>
                 <h3 id="dark-subheader"><u>Results</u></h3>
                     <p id="dark-body-tx">
-                        3 users tested our hi-fi prototype. Here are the results (as well as their answers to our post-test questionnaire):
+                        We had a total of 3 users test our Hi-Fi prototype, with their results and answers to our post-test questionnaire included below:
                     </p>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -386,7 +415,7 @@
                     <br>
                 <h3 id="dark-subheader"><u>Analysis</u></h3>
                     <p id="dark-body-tx">
-                        Finally, we analyzed each user testing video by breaking down the subtasks, the errors users made, their general performance, and potential changes we'd made based on their results.
+                        Finally, we analyzed each user testing video by breaking down the subtasks, the errors users had made, overall user performance with the prototype, and iterations we would make for our prototype based on these results:
                     </p>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -528,6 +557,50 @@
                             </div>
                         </div>
                     </div>
+                    <br>
+                <h3 id="dark-subheader"><u>Overarching Conclusions & Next Steps</u></h3>
+                    <p id="dark-body-tx">
+                        All users had a general sense of confidence and navigated with ease. Any errors they came across, they were eventually able to resolve with some exploration.
+                        <br>
+                        Based on all the users' feedback and their testing videos, here is what we'd improve upon in future iterations of this prototype:
+                        <ul>
+                            <li id="dark-body-tx">
+                                Information Clarity
+                            </li>
+                                <ul>
+                                    <li id="dark-body-subtx">
+                                        Specify exactly what the numerical price values on the cards mean
+                                    </li>
+                                </ul>
+                            <li id="dark-body-tx">
+                                Organization
+                            </li>
+                                <ul>
+                                    <li id="dark-body-subtx">
+                                        Space footer icons out such that the chances of a user clicking on an icon they did not intend to interact with would be reduced
+                                    </li>
+                                    <li id="dark-body-subtx">
+                                        Make the header titles more noticeable and attention-grabbing so users can easily deduce where they are in the app
+                                    </li>
+                                </ul>
+                            <li id="dark-body-tx">
+                                Mental Models
+                            </li>
+                                <ul>
+                                    <li id="dark-body-subtx">
+                                        Change the ‘Sort and Filter’ button into two separate buttons: one for ‘Filter’ and one for ‘Sort’ to better align with user expectations
+                                    </li>
+                                </ul>
+                            <li id="dark-body-tx">
+                                User Populations
+                            </li>
+                                <ul>
+                                    <li id="dark-body-subtx">
+                                        More research will need to be done to further address the needs of those that are in situations where their smartphone use is dependent on aspects like accessibility, financial situation, housing status, or any other factor (what unique issues do they face that we have not designed for in our app?)
+                                    </li>
+                                </ul>
+                        </ul>
+                    </p>
             </div>
         </div>
 
